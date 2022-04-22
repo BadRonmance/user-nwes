@@ -1,0 +1,8 @@
+.align_center {
+	vertical-align: middle;
+}
+
+input[type="text"] {
+	padding: 0;
+	width: 100%;
+}
