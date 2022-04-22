@@ -184,7 +184,7 @@ export default {
 	onShareAppMessage(e) {
 		return {
 			title: `${uni.getStorageSync('userInfo').nickname}给您分享了一则简讯，请查收`,
-			path: `pages/index/headlines/headlines`
+			path: `pages/headlines/headlines`
 		};
 	},
 	methods: {
@@ -222,7 +222,7 @@ ${this.articleData.msg || ''}
 ${this.articleData.tip}
 ${copyText}
 ${this.articleValue}
-【微语】${this.articleData.articleWy.content}#小程序：我的业务头条
+【微语】${this.articleData.articleWy.content}#小程序：我的业务助手
 `;
 			wx.setClipboardData({
 				data: text
